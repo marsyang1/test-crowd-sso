@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="crowd-sso2:war">
+    <output-path>$PROJECT_DIR$/crowd-sso2/target</output-path>
+    <root id="archive" name="crowd-sso2.war">
+      <element id="artifact" artifact-name="crowd-sso2:war exploded" />
+    </root>
+  </artifact>
+</component>

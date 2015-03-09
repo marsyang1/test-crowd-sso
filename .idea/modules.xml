@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/crowd-sso1/crowd-sso1.iml" filepath="$PROJECT_DIR$/crowd-sso1/crowd-sso1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowd-sso2/crowd-sso2.iml" filepath="$PROJECT_DIR$/crowd-sso2/crowd-sso2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-crowd-sso.iml" filepath="$PROJECT_DIR$/test-crowd-sso.iml" />
+    </modules>
+  </component>
+</project>

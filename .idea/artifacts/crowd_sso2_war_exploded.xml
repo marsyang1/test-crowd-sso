@@ -1,0 +1,53 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="crowd-sso2:war exploded">
+    <output-path>$PROJECT_DIR$/crowd-sso2/target/crowd-sso2</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="crowd-sso2" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.primefaces:primefaces:5.1" />
+          <element id="library" level="project" name="Maven: org.omnifaces:omnifaces:1.10" />
+          <element id="library" level="project" name="Maven: org.glassfish:javax.faces:2.2.8" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-web:1.2.3" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-core:1.2.3" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.3" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.1.2" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.2" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.6" />
+          <element id="library" level="project" name="Maven: joda-time:joda-time:2.7" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.14.8" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-cas:1.2.3" />
+          <element id="library" level="project" name="Maven: org.jasig.cas.client:cas-client-core:3.2.1" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.3" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-faces:2.0-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: com.atlassian.crowd:crowd-integration-client-rest:2.8.0" />
+          <element id="library" level="project" name="Maven: com.atlassian.crowd:crowd-integration-client-common:2.8.0" />
+          <element id="library" level="project" name="Maven: com.atlassian.security:atlassian-cookie-tools:3.2.4" />
+          <element id="library" level="project" name="Maven: com.atlassian.crowd:crowd-integration-api:2.8.0" />
+          <element id="library" level="project" name="Maven: com.atlassian.crowd:embedded-crowd-api:2.8.0" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava:11.0.2" />
+          <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:2.0.3" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.3.2" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.3.5" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.3.2" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.6" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient-cache:4.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.0.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.0.7.RELEASE" />
+          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.0.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.0.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.0.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.0.7.RELEASE" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/crowd-sso2/target/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="crowd-sso2/web/Web" />
+    </root>
+  </artifact>
+</component>
