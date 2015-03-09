@@ -19,8 +19,8 @@ public class LogoutMBean {
     private LogoutService logoutService = new LogoutService();
 
     public void logout() {
-        logoutService.logout();
         try {
+            logoutService.logout(Faces.getRequest(), Faces.getResponse());
             Faces.redirect(Faces.getRequestContextPath() + "/index.xhtml");
         } catch (IOException e) {
             log.error("redirect fail ", e);
