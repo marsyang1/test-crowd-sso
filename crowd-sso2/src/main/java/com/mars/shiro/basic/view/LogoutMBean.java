@@ -6,6 +6,8 @@ import org.omnifaces.util.Faces;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
@@ -21,7 +23,9 @@ public class LogoutMBean {
 
     public void logout() {
         try {
-            logoutService.logout(Faces.getRequest(), Faces.getResponse());
+            HttpServletRequest request = Faces.getRequest();
+            HttpServletResponse response = Faces.getResponse();
+            logoutService.logout(request, response);
             Faces.redirect(Faces.getRequestContextPath() + "/index.xhtml");
         } catch (IOException e) {
             log.error("redirect fail ", e);
