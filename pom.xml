@@ -8,7 +8,7 @@
     <modules>
         <module>crowd-sso1</module>
         <module>crowd-sso2</module>
-        <module>security-core</module>
+        <module>security</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
