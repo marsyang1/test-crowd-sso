@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/crowd-sso1/crowd-sso1.iml" filepath="$PROJECT_DIR$/crowd-sso1/crowd-sso1.iml" />
       <module fileurl="file://$PROJECT_DIR$/crowd-sso2/crowd-sso2.iml" filepath="$PROJECT_DIR$/crowd-sso2/crowd-sso2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security-core/security-core.iml" filepath="$PROJECT_DIR$/security-core/security-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-crowd-sso.iml" filepath="$PROJECT_DIR$/test-crowd-sso.iml" />
     </modules>
   </component>

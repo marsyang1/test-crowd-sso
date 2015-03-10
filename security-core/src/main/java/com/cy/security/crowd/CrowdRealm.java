@@ -19,8 +19,7 @@ import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
-
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * Created by mars on 2015/3/6.
@@ -28,7 +27,7 @@ import javax.inject.Inject;
 @Slf4j
 public class CrowdRealm extends AuthorizingRealm {
 
-    @Inject
+    @Autowired
     private CrowdHttpAuthenticator crowdHttpClient;
 
     public CrowdRealm() {
@@ -44,7 +43,7 @@ public class CrowdRealm extends AuthorizingRealm {
         }
         if (!(authenticationToken instanceof CrowdUserToken)) {
             throw new UnsupportedTokenException("Unsupported token of type " + authenticationToken.getClass().getName() + ".  "
-                    + UsernamePasswordToken.class.getName() + " is required.");
+                    + CrowdUserToken.class.getName() + " is required.");
         } else {
             CrowdUserToken token = (CrowdUserToken) authenticationToken;
             try {
