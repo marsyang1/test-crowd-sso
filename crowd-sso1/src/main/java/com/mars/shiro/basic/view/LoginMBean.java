@@ -16,9 +16,9 @@ import org.apache.shiro.subject.Subject;
 import org.omnifaces.util.Faces;
 import org.omnifaces.util.Messages;
 
-import javax.ejb.EJBException;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
+import java.io.IOException;
 
 /**
  * @author mars
@@ -50,21 +50,16 @@ public class LoginMBean {
 
     public String authenticate() {
         CrowdUserToken token = new CrowdUserToken(Faces.getRequest(), Faces.getResponse(), userId, password, rememberMe);
-//        UsernamePasswordToken token = new UsernamePasswordToken(userId, password, rememberMe);
         try {
             loginService.authenticate(token);
             Subject currentUser = SecurityUtils.getSubject();
             log.info("User :" + currentUser.getPrincipal() + "has login");
-            log.info("currentUser.isPermitted(\"create\")" + currentUser.isPermitted("create"));
-            return "/system/secret";
-        } catch (EJBException ejbException) {
-            Exception e = ejbException.getCausedByException();
-            if (e.getClass().getName().equals("AuthenticationException")) {
-                Messages.addFlashGlobalError("登入失敗 ,您輸入的帳號或密碼有誤。");
-            }
+            Faces.redirect(Faces.getRequestContextPath() + "/system/secret.xhtml");
         } catch (AuthenticationException e) {
             log.warn(e.getMessage());
             Messages.addFlashGlobalError("登入失敗 ,您輸入的帳號或密碼有誤。");
+        } catch (IOException e) {
+            Messages.addFlashGlobalError("導向有誤");
         }
         return "";
     }
